@@ -149,7 +149,7 @@ body {
 /* -------------------------------------------------------------------------- */
 /* container */
 .pageNav {
-	position:absolute; top:50%; left:16px; width:35px; height:140px; margin:-70px 0 0 0; padding:0; overflow:hidden;
+	position:absolute; top:50%; left:16px; width:35px; height:100px;/*140px*/ margin:-50px 0 0 0;/*-70px 0 0 0*/ padding:0; overflow:hidden;
 	-webkit-transition:-webkit-transform 0.3s ease-in-out;
 	transition:transform 0.3s ease-in-out;
 	/* kills android css transform visual glitch */
@@ -167,7 +167,7 @@ body {
 	.pageNav .navItem.invert		{ color:rgba(19,54,82,0.3); background:none;  }
 	
 	.pageNav .navItem#articlePrev 	{ top:0; }
-	.pageNav .navItem#articleAudio 	{ top:50%; margin-top:-17px; }
+	.pageNav .navItem#articleAudio 	{ display:none; /*top:50%; margin-top:-17px;*/ }
 	.pageNav .navItem#articleNext 	{ bottom:0; }
 		
 		/* icon */
