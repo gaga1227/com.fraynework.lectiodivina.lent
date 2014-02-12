@@ -432,7 +432,7 @@ section,
 /* btnText */
 .btnText {
 	display:inline-block; position:relative; width:auto; height:auto; margin:0 20px 20px 0; padding:0; overflow:hidden;
-	color:#fff; white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
+	color:#f8f5fe; white-space:nowrap; text-overflow:ellipsis;
 	font-family:'LeagueGothic',sans-serif; font-size:20px; font-weight:400; line-height:1em;
 	text-decoration:none!important; }
 	.btnText .label { text-decoration:none!important; vertical-align:middle; }
@@ -525,7 +525,7 @@ section,
 /* -------------------------------------------------------------------------- */
 /* intro */
 #pgHome .intro { 
-	display:block; width:340px; height:100px; margin:8% auto 0 auto;
+	display:block; width:465px; height:90px; margin:10% auto 0 auto;
 	opacity:0;
 	/*transition*/
 	-webkit-transition:all 0.8s ease-out;
@@ -546,14 +546,13 @@ section,
 /* responsive - widescreen */
 @media only screen and (min-aspect-ratio: 42/30) {
 	/* move intro up */
-	#pgHome .intro { width:auto; height:90px; margin:5% auto 0 auto; }
+	#pgHome .intro { width:auto; height:90px; margin:7% auto 0 auto; }
 }
 
 /* -------------------------------------------------------------------------- */
 /* nav */
 #pgHome .nav {
-	display:block; position:absolute; top:50%; left:50%; width:940px; height:320px; margin:-140px 0 0 -470px; padding:0; overflow:hidden;
-	background:transparent url(../img/bg-home-nav.png) center top no-repeat; background-size:940px 215px;
+	display:block; position:absolute; top:50%; left:50%; width:970px; height:270px; margin:-105px 0 0 -485px; padding:0; overflow:hidden;
 	opacity:0;
 	/*transition*/
 	-webkit-transition:all 1.2s ease-in-out;
@@ -577,38 +576,64 @@ section,
 /* responsive - widescreen */
 @media only screen and (min-aspect-ratio: 42/30) {
 	/* fit nav */
-	#pgHome .nav 		{ margin-top:-135px; } 
-	#pgHome .nav.active { -webkit-transform:scale(0.9); transform:scale(0.9); }
+	#pgHome .nav 		{ margin-top:-115px; } 
+	#pgHome .nav.active { /*-webkit-transform:scale(0.9); transform:scale(0.9);*/ }
 }
 
 	/* -------------------------------------------------------------------------- */
 	/* item */
 	#pgHome .nav .navItem {
-		display:block; position:absolute; top:0; width:182px; height:100%; margin:0; padding:230px 0 0 0; overflow:hidden;
-		background:transparent left top no-repeat; background-size:370px 213px;
-		text-align:center; text-transform:uppercase; font-weight:400;	
+		display:block; position:absolute; top:0; width:192px; height:100%; margin:0; padding:200px 0 0 0; overflow:hidden;
+		font-family:'LeagueGothic',sans-serif; text-align:center; font-weight:400;	
 		/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+		
+		/* bg */
+		#pgHome .nav .navItem:before {
+			content:'';
+			display:block; position:absolute; top:0; left:0; width:192px; height:192px; margin:0 auto; padding:0; overflow:hidden;
+			background:transparent url(../img/bg-home-nav.jpg) center top no-repeat; background-size:960px 192px;
+			/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
+			/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
+		
+		/* border */
+		#pgHome .nav .navItem:after {
+			content:'';
+			display:none; position:absolute; top:0; left:0; width:192px; height:192px; margin:0 auto; padding:0; overflow:hidden;
+			border:10px solid #c288b3;
+			/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+			/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
+			/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
 		
 		/* label */
 		#pgHome .nav .navItem .label {
-			display:inline-block; width:auto; height:auto; margin:0 auto; padding:0 3px; overflow:hidden;
-			border:1px solid #7b4b95; border-left:none; border-right:none; text-transform:capitalize;
-			color:#5b207b; font-family:'Alegreya',serif; font-size:14px; font-style:italic; line-height:1.4em; }
+			display:block; width:110px; height:auto; margin:0 auto; padding:0; overflow:hidden;
+			color:#fff; background:#c288b3; text-transform:uppercase;
+			font-size:16px; line-height:1.5em;
+			/*border-radius*/-webkit-border-radius:0.75em; border-radius:0.75em;
+			/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
 			
 		/* sublabel */
 		#pgHome .nav .navItem .sublabel {
-			display:block; width:auto; height:auto; margin:0.5em 0 0 0; padding:0; overflow:hidden;
-			color:#83569c; font-family:'LeagueGothic',sans-serif; font-size:25px; line-height:1em; }
+			display:block; width:auto; height:auto; margin:0.4em 0 0 0; padding:0;
+			color:#675348; font-size:26px; line-height:1em; }
 	
 	/* interaction */
-	#pgHome .nav .navItem.active { background-position:-185px top; }
+	#pgHome .nav .navItem.active:after { display:block; }
 	
 	/* custom */
-	#pgHome .nav .navItem:nth-child(1) { left:16px;  background-image:url(../img/img-home-nav-flower-1.png); }
-	#pgHome .nav .navItem:nth-child(2) { left:198px; background-image:url(../img/img-home-nav-flower-2.png); }
-	#pgHome .nav .navItem:nth-child(3) { left:380px; background-image:url(../img/img-home-nav-flower-3.png); }
-	#pgHome .nav .navItem:nth-child(4) { left:562px; background-image:url(../img/img-home-nav-flower-4.png); }
-	#pgHome .nav .navItem:nth-child(5) { left:744px; background-image:url(../img/img-home-nav-flower-5.png); }	
+	#pgHome .nav .navItem:nth-child(1) { left:1px;   }
+	#pgHome .nav .navItem:nth-child(2) { left:195px; }
+	#pgHome .nav .navItem:nth-child(3) { left:389px; }
+	#pgHome .nav .navItem:nth-child(4) { left:583px; }
+	#pgHome .nav .navItem:nth-child(5) { left:777px; }
+	
+	#pgHome .nav .navItem:nth-child(1):before { background-position:0 0; }
+	#pgHome .nav .navItem:nth-child(2):before { background-position:-192px 0; }
+	#pgHome .nav .navItem:nth-child(3):before { background-position:-384px 0; }
+	#pgHome .nav .navItem:nth-child(4):before { background-position:-576px 0; }
+	#pgHome .nav .navItem:nth-child(5):before { background-position:-768px 0; }
+	
+	
 	
 /* -------------------------------------------------------------------------- */
 /* navExtra */
@@ -638,13 +663,13 @@ section,
 	
 	/* -------------------------------------------------------------------------- */
 	/* btnText */
-	#pgHome .navExtra .btnText { margin:20px 25px; }
+	#pgHome .navExtra .btnText { margin:20px 30px; }
 		
 		/* iconInline */
 		#pgHome .navExtra .btnText .iconInline { 
 			width:1.5em; height:1.5em; margin:0 10px 0 0; padding:0;
-			background:#5e476b; border:2px solid #fff;
-			font-size:24px; line-height:1.5em;
+			background:#a7779c; border:2px solid #fff;
+			font-size:20px; line-height:1.5em;
 			/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
 			/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
 			
