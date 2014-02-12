@@ -140,7 +140,7 @@ body {
 	/* headerTitle */
 	.pageHeader .headerTitle {
 		display:block; width:auto; height:auto; margin:0 180px 0 120px; padding:0; overflow:hidden;
-		color:#6e2f8b; white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
+		color:#b37cb1; white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
 		font-family:'LeagueGothic',sans-serif; font-size:52px; font-weight:400; line-height:165px; }
 
 
@@ -460,7 +460,7 @@ section,
 /* btnCircle */
 .btnCircle {
 	display:block; position:relative; width:75px; height:75px; margin:0; padding:0; overflow:hidden;
-	color:#fff!important; background:#6d378b url(../img/bg-btn-circle@1x.jpg) center center no-repeat; background-size:75px 75px; 
+	color:#fff!important; background:#b37cb1; 
 	font-family:'LeagueGothic',sans-serif; font-weight:400; 
 	text-transform:uppercase; text-align:center; text-decoration:none!important; 
 	/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
@@ -483,7 +483,7 @@ section,
 	.btnCircle .iconInline { position:relative; font-size:12px; vertical-align:text-top; }
 
 /* interaction */
-.btnCircle.active 			{ color:#6d378b!important; }
+.btnCircle.active 			{ color:#b37cb1!important; }
 .btnCircle.active:before 	{ background:#fff; border:1px solid rgba(255,255,255,1); }
 
 /* custom */
