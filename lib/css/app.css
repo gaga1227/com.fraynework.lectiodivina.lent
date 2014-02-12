@@ -58,16 +58,18 @@ body {
 /* container */
 #nav { 
 	position:absolute; top:0; right:0; width:100%; height:45px; margin:0; padding:0; overflow:hidden; z-index:10;
-	background:rgba(255,255,255,0.5); text-align:center; }
+	background:rgba(255,255,255,0.7); text-align:center; }
 	
 	/* -------------------------------------------------------------------------- */
 	/* item */
 	#nav .navItem { 
-		display:inline-block; width:auto; height:45px; margin:0; padding:0; overflow:hidden;
-		color:#333; font-family:'LeagueGothic',sans-serif; font-size:19px; line-height:45px; text-transform:uppercase; }
+		display:inline-block; width:auto; height:31px; margin:7px 0; padding:0; overflow:hidden;
+		color:#494641; font-family:'LeagueGothic',sans-serif; font-size:19px; line-height:31px; text-transform:uppercase;
+		/*border-radius*/-webkit-border-radius:16px; border-radius:16px;
+		/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
 		
 		/* label */		
-		#nav .navItem .label { margin:0 25px; }
+		#nav .navItem .label { padding:0 25px; }
 	
 	/* interaction */
 	#nav .navItem.active { 
@@ -75,7 +77,7 @@ body {
 		
 	/* current */
 	#nav .navItem.current { 
-		color:#fff; background:url(../img/bg-nav@1x.jpg) center center repeat-x; background-size:226px 45px;
+		color:#fff; background:#b37cb1;
 		pointer-events:none; cursor:default; }
 	
 	/* -------------------------------------------------------------------------- */
@@ -87,7 +89,7 @@ body {
 		/* icon */
 		#nav .btnMenu .icon { 
 			top:0; left:0; width:100%; height:100%; 
-			font-size:24px; line-height:45px; }
+			font-size:32px; line-height:45px; }
 			
 	/* interaction */
 	#nav .btnMenu.active { 
