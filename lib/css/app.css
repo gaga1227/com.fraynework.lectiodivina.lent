@@ -357,7 +357,7 @@ body {
 		.contentView .quote:after	{ bottom:0; left:0; right:45px; }
 		
 		/* icon */
-		.contentView .quote .icon 				{ width:30px; height:30px; color:#a483b6; font-size:32px; }
+		.contentView .quote .icon 				{ width:30px; height:30px; color:#b37cb1; font-size:32px; }
 		.contentView .quote .icon:first-child 	{ top:-7px; left:0; }
 		.contentView .quote .icon:last-child 	{ bottom:-7px; right:0; }
 		
@@ -578,8 +578,8 @@ section,
 /* responsive - widescreen */
 @media only screen and (min-aspect-ratio: 42/30) {
 	/* fit nav */
-	#pgHome .nav 		{ margin-top:-115px; } 
-	#pgHome .nav.active { /*-webkit-transform:scale(0.9); transform:scale(0.9);*/ }
+	#pgHome .nav 		{ margin-top:-100px; }
+	#pgHome .nav.active { -webkit-transform:scale(0.98); transform:scale(0.98); }
 }
 
 	/* -------------------------------------------------------------------------- */
