@@ -719,15 +719,17 @@ section,
 			/* letter */
 			#pgWeeks .sectionWrapper [data-role="section"]:before { 
 				content:'';
-				display:block; position:absolute; bottom:25px; right:40px; width:165px; height:215px; margin:0; padding:0; overflow:hidden;
+				display:none; position:absolute; bottom:25px; right:40px; width:165px; height:215px; margin:0; padding:0; overflow:hidden;
 				background:transparent center center no-repeat; background-size:165px 215px; }
 				
 				/* custom */
+				/*
 				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(1):before { background-image:url(../img/img-letter-1@1x.png); }
 				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(2):before { background-image:url(../img/img-letter-2@1x.png); }
 				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(3):before { background-image:url(../img/img-letter-3@1x.png); }
 				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(4):before { background-image:url(../img/img-letter-4@1x.png); }
-				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(5):before { background-image:url(../img/img-letter-5@1x.png); }		
+				#pgWeeks .sectionWrapper [data-role="section"]:nth-child(5):before { background-image:url(../img/img-letter-5@1x.png); }
+				*/		
 			
 			/* -------------------------------------------------------------------------- */
 			/* overlay */
