@@ -818,12 +818,11 @@ section,
 			position:absolute; bottom:60px; left:120px; }
 
 /* -------------------------------------------------------------------------- */
-/* responsive - widescreen */
-@media only screen and (min-aspect-ratio: 42/30) {
+/* responsive - widescreen and small height */
+@media only screen and (min-aspect-ratio: 42/30) and (max-height:750px) {
 	/* hide links */
 	#pgWeeks [data-role="articleContent"] ol.articleNav { display:none; }
 }
-	
 	
 /* ==========================================================================
    page - EXTRA
