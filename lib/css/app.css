@@ -410,9 +410,8 @@ section,
 		/* kills css transform glitch line */
 		-webkit-backface-visibility:hidden; backface-visibility:hidden; }
 		
-	/* article -> scrollerContent */
-	article [data-role="scrollerContent"] {
-		/* remove HWA for article scrollers */
+	/* iOS remove HWA for article scrollers, kills rendering glitch */
+	.ios article [data-role="scrollerContent"] {
 		-webkit-transition:none!important; transition:none!important;
 		-webkit-transform:none!important; transform:none!important;
 		-webkit-backface-visibility:visible!important; backface-visibility:visible!important; }
