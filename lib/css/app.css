@@ -409,12 +409,17 @@ section,
 		-webkit-transform:translateZ(0); transform:translateZ(0);
 		/* kills css transform glitch line */
 		-webkit-backface-visibility:hidden; backface-visibility:hidden; }
+		
+	/* article -> scrollerContent */
+	article [data-role="scrollerContent"] {
+		/* remove HWA for article scrollers */
+		-webkit-transition:none!important; transition:none!important;
+		-webkit-transform:none!important; transform:none!important;
+		-webkit-backface-visibility:visible!important; backface-visibility:visible!important; }
 
 /* mask */
 .ios .scroller.mask {
 	-webkit-mask-image:-webkit-linear-gradient(top, transparent 0%, white 5%, white 90%, transparent 100%); }
-.ios .scroller.mask.noBtm {
-	-webkit-mask-image:-webkit-linear-gradient(top, transparent 0%, white 5%, white 100%); }
 
 /* IScroll */
 .iScrollVerticalScrollbar 				{ width:5px!important; right:2px!important; opacity:0.6!important; }
