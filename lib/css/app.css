@@ -78,7 +78,8 @@ body {
 	/* current */
 	#nav .navItem.current { 
 		color:#fff; background:#b37cb1;
-		pointer-events:none; cursor:default; }
+		/* enabled for jumping back to landing */
+		/*pointer-events:none; cursor:default;*/ }
 	
 	/* -------------------------------------------------------------------------- */
 	/* btnMenu */
