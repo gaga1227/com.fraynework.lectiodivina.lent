@@ -583,6 +583,11 @@ section,
 	#pgHome .nav 		{ margin-top:-100px; }
 	#pgHome .nav.active { -webkit-transform:scale(0.98); transform:scale(0.98); }
 }
+@media only screen and (min-aspect-ratio: 42/30) and (min-width: 1200px) {
+	/* fit nav */
+	#pgHome .nav 		{ margin-top:-100px; }
+	#pgHome .nav.active { -webkit-transform:scale(1.15); transform:scale(1.15); }
+}
 
 	/* -------------------------------------------------------------------------- */
 	/* item */
