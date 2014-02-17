@@ -72,8 +72,9 @@ body {
 		#nav .navItem .label { padding:0 25px; }
 	
 	/* interaction */
-	#nav .navItem.active { 
-		color:#fff; background:#a483b6; }
+	#nav .navItem.active,
+	#nav .navItem.current.active { 
+		color:#fff; background:#a25e9e; }
 		
 	/* current */
 	#nav .navItem.current { 
